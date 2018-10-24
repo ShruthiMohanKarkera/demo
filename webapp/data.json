@@ -1,0 +1,64 @@
+ {
+ 	"z1": [{
+ 		"title": "shruthi",
+ 		"number": true,
+ 		"prashanth": "700",
+ 		"street": "10th cross",
+ 		"zip": "456789",
+ 		"city": "Mangalore",
+ 		"salary": "50000",
+ 		"id": "001",
+ 		"currency": "INR"
+
+ 	}, {
+ 		"title": "arun",
+ 		"number": "2",
+ 		"prashanth": "700",
+ 		"street": "11th block",
+ 		"zip": "456799",
+ 		"city": "Kerala",
+ 		"salary": "35000",
+ 		"id": "002",
+ 		"currency": "EUR"
+ 	}, {
+ 		"title": "Poornima",
+ 		"number": "3",
+ 		"prashanth": "700",
+ 		"street": "1st main",
+ 		"zip": "456790",
+ 		"city": "bangalore",
+ 		"salary": "30000",
+ 		"id": "003",
+ 		"currency": "DOLLER"
+ 	}, {
+ 		"title": "Praveen",
+ 		"number": "3",
+ 		"prashanth": "700",
+ 		"street": "8th cross",
+ 		"zip": "456790",
+ 		"city": "Pondicheri",
+ 		"salary": "70000",
+ 		"id": "003",
+ 		"currency": "DOLLER"
+ 	}, {
+ 		"title": "Sindu",
+ 		"number": "3",
+ 		"prashanth": "700",
+ 		"street": "2st Block",
+ 		"zip": "456790",
+ 		"city": "Thumkur",
+ 		"salary": "40000",
+ 		"id": "003",
+ 		"currency": "DOLLER"
+ 	}, {
+ 		"title": "Manohar",
+ 		"number": "3",
+ 		"prashanth": "700",
+ 		"street": "1st block, 4th main",
+ 		"zip": "456790",
+ 		"city": "Thumkur",
+ 		"salary": "20000",
+ 		"id": "003",
+ 		"currency": "DOLLER"
+ 	}]
+ }

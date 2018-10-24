@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Table.Assignment.controller.Resume"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{jModel>/title5/title}">
+				<content>
+						<IconTabBar
+				id="iconTabBar"
+				headerBackgroundDesign="Transparent"
+				class="sapUiResponsiveContentPadding"
+			>
+				<items>
+					<IconTabFilter id="infoTab" text="Info" key="Info">
+						<Text text="Information" />
+					</IconTabFilter>
+					<IconTabFilter id="projectsTab" text="Project" key="Projects">
+							<Text text="project" />
+						<!--<mvc:XMLView viewName="sap.ui.demo.nav.view.employee.ResumeProjects"></mvc:XMLView>-->
+					</IconTabFilter>
+					<IconTabFilter id="hobbiesTab" text="Hobbies" key="Hobbies">
+						<Text text="Hobbies" />
+					</IconTabFilter>
+					<IconTabFilter id="notesTab" text="Notes" key="Notes">
+						<Text text="Notes" />
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

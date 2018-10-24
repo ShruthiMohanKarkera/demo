@@ -1,0 +1,172 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "Table.Assignment",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "Table.Assignment.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "Table.Assignment.i18n.i18n"
+				}
+			},
+			"jModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "data.json"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "Table.Assignment.view",
+				"controlAggregation": "pages",
+				"controlId": "idAppControl",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"name": "RouteView1",
+					"pattern": "",
+					"target": "TargetView1"
+				},
+				{
+					"name": "TargetView2",
+					"pattern": "RouteView1/{id}/{name}/{street}/{city}",
+					"target": "V2"
+				},
+				{
+					"name": "TargetView3",
+					"pattern": "RouteView1/{employeeId}/resume",
+					"target": "Resume"
+				},
+				{
+					"name": "TargetView4",
+					"pattern": "RouteView1/overview",
+					"target": ["EmployeeTop","EmployeeContent"]
+				}
+			],
+			"targets": {
+				"TargetView1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View1",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "Table.Assignment.view",
+					"controlAggregation": "pages"
+					
+				},
+				"V2": {
+					"viewType": "XML",
+					"transition": "slide",
+					"routerClass": "sap.m.routing.Router",
+					"clearControlAggregation": false,
+					"viewName": "V2",
+					"async": true,
+					"viewPath": "Table.Assignment.view",
+					"controlAggregation": "pages",
+					"controlId": "idAppControl"
+				},
+				"Resume": {
+					"viewType": "XML",
+					"viewName": "Resume",
+					"transition": "fade",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "Table.Assignment.view",
+					"controlAggregation": "pages",
+				
+					"clearControlAggregation": false
+				},
+				"EmployeeOverview": {
+					"viewType": "XML",
+					"viewName": "EmployeeOverview",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "Table.Assignment.view",
+					"controlAggregation": "pages",
+					
+					"clearControlAggregation": false
+				},
+				"EmployeeTop": {
+					"viewType": "XML",
+					"viewName": "EmployeeTop",
+					"parent": "EmployeeOverview",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "Table.Assignment.view",
+					"controlAggregation": "content",
+					"controlId": "idAppControl",
+					"clearControlAggregation": false
+				},
+				"EmployeeContent": {
+					"viewType": "XML",
+						"parent": "EmployeeOverview",
+					"viewName": "EmployeeContent",
+					"viewPath": "Table.Assignment.view",
+					"controlAggregation": "content",
+					"controlId": "idAppControl"
+					
+				}
+			}
+		}
+	}
+}

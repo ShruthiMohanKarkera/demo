@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Table.Assignment.controller.EmployeeContent">
+	<App>
+		<pages>
+			<Page title="content">
+				<content>
+				    <IconTabHeader selectedKey="__filter0" id="header0">
+				        <items>
+				            <IconTabFilter text="Orders" count="22" showAll="true" id="filter0">
+				                <content>
+				                    <List noDataText="No data" id="list0">
+				                        <items>
+				                            <StandardListItem title="List Item 1" id="item0"/>
+				                            <StandardListItem title="List Item 2" id="item1"/>
+				                            <StandardListItem title="List Item 3" id="item2"/></items>
+				                    </List>
+				                </content>
+				            </IconTabFilter>
+				            <IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Critical" id="filter1"/>
+				            <IconTabFilter text="Shipped" count="5" icon="sap-icon://shipping-status" iconColor="Positive" id="filter2"/></items>
+				    </IconTabHeader>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
